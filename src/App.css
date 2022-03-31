@@ -1,0 +1,57 @@
+:root {
+  --grey-dark: #444444;
+  --btn-gray-faded: rgb(68, 68, 68, 0.8);
+  --btn-gray-faded-strong: rgb(68, 68, 68, 0.6);
+  --grey-darker: #292929;
+  --grey-light: #818181;
+  --white-bone: #cfcfcf;
+  --emerald-light: #4394a9;
+  --emerald-shine: #5cc9e5;
+  --transition-time: 0.4s;
+  --shadow-radius: 25px;
+  --border-radius-card: 5px;
+  --border-radius-card-cat: 10px;
+}
+
+/* Text selectin color*/
+::selection {
+  background: var(--emerald-light); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--emerald-light); /* Gecko Browsers */
+}
+
+* {
+  /* user-select: none; */
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  transition-duration: var(--transition-time);
+  -webkit-transition-duration: var(--transition-time);
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  background-color: black;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+a {
+  color: var(--emerald-shine);
+}
