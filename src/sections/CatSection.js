@@ -1,11 +1,11 @@
 import "../App.css";
-import Slider from "./Slider";
+import Carousel from "../components/Carousel";
 
 export default function CatSection() {
   return (
     <>
       <h2 className="section-header">My Cat</h2>
-      <Slider />
+      <Carousel />
     </>
   );
 }

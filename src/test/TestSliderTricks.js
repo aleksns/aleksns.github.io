@@ -1,22 +1,22 @@
 if (navigator.msMaxTouchPoints) {
 
-    $('#slider').addClass('ms-touch');
+    $('#carousel').addClass('ms-touch');
   
-    $('#slider').on('scroll', function() {
+    $('#carousel').on('scroll', function() {
       $('.slide-image').css('transform','translate3d(-' + (100-$(this).scrollLeft()/6) + 'px,0,0)');
     });
   
   } else {
   
-    var slider = {
+    var carousel = {
   
       el: {
-        slider: $("#slider"),
+        carousel: $("#carousel"),
         holder: $(".holder"),
         imgSlide: $(".slide-image")
       },
   
-      slideWidth: $('#slider').width(),
+      slideWidth: $('#carousel').width(),
       touchstartx: undefined,
       touchmovex: undefined,
       movex: undefined,
@@ -30,15 +30,15 @@ if (navigator.msMaxTouchPoints) {
       bindUIEvents: function() {
   
         this.el.holder.on("touchstart", function(event) {
-          slider.start(event);
+          carousel.start(event);
         });
   
         this.el.holder.on("touchmove", function(event) {
-          slider.move(event);
+          carousel.move(event);
         });
   
         this.el.holder.on("touchend", function(event) {
-          slider.end(event);
+          carousel.end(event);
         });
   
       },
@@ -47,7 +47,7 @@ if (navigator.msMaxTouchPoints) {
         // Test for flick.
         this.longTouch = false;
         setTimeout(function() {
-          window.slider.longTouch = true;
+          window.carousel.longTouch = true;
         }, 250);
   
         // Get the original touch position.
@@ -91,5 +91,5 @@ if (navigator.msMaxTouchPoints) {
   
     };
   
-    slider.init();
+    carousel.init();
   }

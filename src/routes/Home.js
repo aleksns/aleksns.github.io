@@ -1,7 +1,7 @@
 import "../App.css";
-import CatSection from "../components/CatSection";
-import HeroSection from "../components/HeroSection";
-import ProjectsSection from "../components/ProjectsSection";
+import CatSection from "../sections/CatSection";
+import HeroSection from "../sections/HeroSection";
+import ProjectsSection from "../sections/ProjectsSection";
 
 export default function Home() {
   return (

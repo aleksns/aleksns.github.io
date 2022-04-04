@@ -1,25 +1,16 @@
 export default function SwipeComponent(currentIndex, handleIndexChange) {
   const swipeStep = 10;
-  const swipeHoldTimeAllowed = 1000;
 
   var startX = undefined;
   var endX = undefined;
 
-  var timeStart = 0;
-  var timeEnd = 0;
-
   function startTouch(e) {
-    timeStart = Date.now();
     startX = e.touches[0].clientX;
   }
 
   function endTouch(e) {
-    timeEnd = Date.now();
     endX = e.changedTouches[0].clientX;
-
-    if (timeEnd - timeStart < swipeHoldTimeAllowed) {
-      swipe();
-    }
+    swipe();
   }
 
   function swipe() {
@@ -38,13 +29,13 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
     }
   }
 
-  function moveTouch(e){
-      e.preventDefault()
+  function moveTouch(e) {
+    e.preventDefault();
   }
 
   return {
     startTouch,
     endTouch,
-    moveTouch
+    moveTouch,
   };
 }

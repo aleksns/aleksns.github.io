@@ -6,7 +6,7 @@ export default function HeroSection() {
       <div className="hero-image">
         <div className="hero-text-container">
           <h1>Aleksandr Nazarov</h1>
-          <p>Welcome to the Internet</p>
+          <h3>Welcome to the Internet</h3>
         </div>
       </div>
     </>

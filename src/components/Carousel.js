@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import { act } from "react-dom/test-utils";
 import "../App.css";
 import { listOfCatPics } from "../services/services";
 import SwipeComponent from "./SwipeComponent";
 
-export default function Slider() {
-  const itemWidth = "100%";
+const itemWidth = "100%";
+export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const maxIndex = listOfCatPics.length - 1;
-
+  const [isMouseOver, setIsMouseOver] = useState(false);
+  
   const { startTouch, endTouch } = SwipeComponent(
     currentIndex,
     handleIndexChange
   );
-  const [isMouseOver, setIsMouseOver] = useState(false);
+  
 
   function handleIndexChange(newIndex) {
     if (newIndex < 0) {
@@ -25,28 +25,24 @@ export default function Slider() {
     setCurrentIndex(newIndex);
   }
 
-  function SliderItem(props) {
-    const { item } = props;
+  function CarouselContent(props) {
+    const { item, index } = props;
     return (
-      // <div className="slider-item" style={{ width: itemWidth }}>
       <img
         src={item}
-        className="slider-item"
-        style={{ width: itemWidth }}
+        className="carousel-item"
+        // style={{ width: itemWidth }}
       ></img>
-
-      // </div>
     );
   }
 
-  function SliderRadio(props) {
+  function CarouselRadio(props) {
     const { item, index } = props;
     return (
       <input
         checked={index == currentIndex ? true : false}
         type="radio"
-        id={item}
-        className="test"
+        id={item.id}
         name="catPics"
         onChange={() => handleIndexChange(index)}
       />
@@ -61,7 +57,7 @@ export default function Slider() {
         if (currentIndex >= maxIndex) {
           handleIndexChange(0);
         }
-      }, 5000);
+      }, 15000);
 
       return () => clearInterval(timer);
     }
@@ -69,38 +65,41 @@ export default function Slider() {
 
   return (
     <>
-      <div className="test-wrapper">
+      <div className="center-section">
+        <button
+          onClick={() => handleIndexChange(currentIndex - 1)}
+          className="carousel-btn"
+        >
+         {`<`}
+        </button>
         <div
-          className="slider"
+          className="carousel"
           onMouseEnter={() => setIsMouseOver(true)}
           onMouseLeave={() => setIsMouseOver(false)}
           onTouchStart={startTouch}
           onTouchEnd={endTouch}
         >
           <div
-            className="inner"
-            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            className="carousel-inner"
+            style={{ transform: `translateX(-${currentIndex * 200}%)` }}
           >
-            {listOfCatPics.map((item) => (
-              <SliderItem key={item.id} item={item.image} />
-            ))}
-          </div>
-
-          <div className="indicators">
             {listOfCatPics.map((item, index) => (
-              <SliderRadio key={index} item={item} index={index} />
+              <CarouselContent key={item.id} item={item.image} index={index}/>
             ))}
           </div>
 
-          <div className="indicators">
-            <button onClick={() => handleIndexChange(currentIndex - 1)}>
-              Prev
-            </button>
-            <button onClick={() => handleIndexChange(currentIndex + 1)}>
-              Next
-            </button>
+          <div className="center-section carousel-radio section-header">
+            {listOfCatPics.map((item, index) => (
+              <CarouselRadio key={index} item={item} index={index} />
+            ))}
           </div>
         </div>
+        <button
+          onClick={() => handleIndexChange(currentIndex + 1)}
+          className="carousel-btn"
+        >
+          {`>`}
+        </button>
       </div>
     </>
   );

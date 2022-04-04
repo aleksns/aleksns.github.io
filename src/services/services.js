@@ -1,6 +1,8 @@
-import spaceBrawlImg from "../images/brawl.png";
-import dotsConnectorImg from "../images/dots.png";
-import impressivePainterImg from "../images/painter.png";
+import spaceBrawlImg from "../images/projects/spaceBrawl.png";
+import dotsConnectorImg from "../images/projects/dotsConnector.png";
+import impressivePainterImg from "../images/projects/impressivePainter.png";
+import commentsPickerImg from "../images/projects/commentsPicker.png";
+import employeesTableImg from "../images/projects/employeesTable.png";
 
 import cat1Img from "../images/cat/cat1.png";
 import cat2Img from "../images/cat/cat2.png";
@@ -14,16 +16,36 @@ export const listOfProjects = [
         id: "space-brawl",
         title: "Space Brawl",
         image: spaceBrawlImg,
+        url: "https://github.com/aleksns/space-brawl",
+        urlDemo: "https://aleksns.github.io/space-brawl/"
     },
     {
         id: "impressive-painter",
         title: "Impressive Painter",
         image: impressivePainterImg,
+        url: "https://github.com/aleksns/impressive-painter",
+        urlDemo: "https://aleksns.github.io/impressive-painter/"
+    },
+    {
+        id: "comments-picker",
+        title: "Comments Picker",
+        image: commentsPickerImg,
+        url: "https://github.com/aleksns/comments-picker",
+        urlDemo: "https://aleksns.github.io/comments-picker/"
     },
     {
         id: "dots-connector",
         title: "Dots Connector",
         image: dotsConnectorImg,
+        url: "https://github.com/aleksns/dots-connector",
+        urlDemo: "https://aleksns.github.io/dots-connector/"
+    },
+    {
+        id: "spa-employees-table",
+        title: "Employees Table",
+        image: employeesTableImg,
+        url: "https://github.com/aleksns/spa-employees-table",
+        urlDemo: undefined
     },
 ]
 

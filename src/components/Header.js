@@ -1,19 +1,27 @@
 import { NavLink } from 'react-router-dom';
 import '../App.css';
 import siteLogoImg from "../images/siteLogo.png";
+import GitLink from './GitLink';
 
 export default function Header() {
   return (
-    <div className="header-main">
-        <NavLink to="/">
-        <img src={siteLogoImg} className="home-link-img"></img>
+    <div className="nav-main">
+      <div className="header"></div>
+        <NavLink to="/" className="header-content">
+        Aleksns
         </NavLink>
-        
-        <div className="container-header-links">
-        <NavLink to="/contacts">Projects</NavLink>
+        <ul className="nav-header-links">
+        <NavLink to="/projects">Projects</NavLink>
         <NavLink to="/contacts">My Cat</NavLink>
         <NavLink to="/contacts">Contacts</NavLink>
+        <GitLink />
+        </ul>
+        <div className="header-hamburger header-content">
+          <span className="line1"></span>
+          <span className="line2"></span>
+          <span className="line3"></span>
         </div>
+        
     </div>
   );
 }
