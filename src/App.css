@@ -19,6 +19,7 @@
   color: #ffffff;
   font-family: "Fredoka", sans-serif;
   transition-duration: var(--transition-time);
+  letter-spacing: 0.02em;
 }
 
 body,
@@ -28,6 +29,7 @@ html {
   height: 100vh; */
   overflow-x: hidden;
   background-color: black;
+  text-align: center
 }
 
 a {
@@ -37,21 +39,18 @@ a {
 }
 
 a:hover {
-  /* color: var(--grey-light); */
   color: var(--emerald-shine);
 }
 
 h1 {
-  font-size: 3em;
-}
-
-h2 {
-  font-size: 2em;
+  font-size: 4em;
+  margin-bottom: 0.5em;
+  border-bottom: 4px solid var(--emerald-shine);
 }
 
 h3 {
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.6em;
 }
 
 h4 {
@@ -86,6 +85,7 @@ h4 {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  white-space: nowrap;
 }
 
 .content {
@@ -120,6 +120,18 @@ h4 {
   z-index: 15;
 }
 
+.header-section {
+  border-left: 4px solid var(--emerald-shine);
+  border-right: 4px solid var(--emerald-shine);
+}
+
+.section {
+  padding: 0 0.5em;
+  margin: 2em 0 2em 0;
+  font-size: 2em;
+  display: inline-block;
+}
+
 .git-img {
   width: 1.5em;
   height: 1.5em;
@@ -133,6 +145,7 @@ h4 {
 .footer {
   position: relative;
   bottom: 0;
+  margin-top: 3em;
   justify-content: right;
   background-color: var(--grey-darker);
 }
@@ -148,11 +161,6 @@ h4 {
   align-items: center;
   z-index: 15;
   transition: transform 0.9s;
-}
-
-.section-header {
-  text-align: center;
-  margin: 1em 0;
 }
 
 .header-hamburger {
@@ -176,7 +184,7 @@ h4 {
   column-gap: 1.5em;
   row-gap: 1em;
   text-align: center;
-  margin: 2em;
+  margin: 0 2em;
 }
 
 .project-card {
@@ -255,29 +263,35 @@ h4 {
 .center-section {
   display: flex;
   justify-content: center;
-  border-radius: var(--border-radius-card);
 }
 
 
 /* Carousel */
 .carousel {
   overflow: hidden;
-  width: 50%;
+  width: 60%;
 }
 
-.carousel-inner {
+.carousel-slides {
   white-space: nowrap;
-  transition: transform 0.9s;
+  transition: transform 0.6s;
+  width: 100%;
+}
+
+.carousel-item-container {
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  margin-right: 150%;
 }
 
 .carousel-item {
-  width: 100%;
-  height: 450px;
-  /* display: inline-flex; */
-  align-items: center;
-  justify-content: center;
+  max-width: 100%;
+  /* height: 25em; */
+  height: 50vh;
   border-radius: var(--border-radius-card-cat);
-  margin-right: 100%;
 }
 
 .carousel-btn {
@@ -301,6 +315,10 @@ h4 {
   background-color: var(--grey-darker);
   color: var(--emerald-shine);
   opacity: 1.0;
+}
+
+.carousel-radio-section {
+  margin: 1em 0;
 }
 
 
@@ -332,11 +350,6 @@ input[type="radio"]:checked:after {
 }
 
 
-
-
-
-
-
 /* Scrollbar*/
 @media screen and (min-width: 1024px) {
   body::-webkit-scrollbar {
@@ -352,14 +365,80 @@ input[type="radio"]:checked:after {
     background-clip: padding-box;
     /* outline: 1px solid var(--grey-light); */
   }
-}  
+} 
 
+@media screen and (max-width: 1200px) {
+  .carousel {
+    width: 65%;
+  }
+}
 
-@media screen and (max-width: 769px) {
-  h1 {
-   font-size: 4em;
+@media screen and (max-width: 1125px) {
+  .carousel {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    font-size: 1.7em;
   }
 
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5em;
+    row-gap: 2em;
+    margin: 2em;
+  }
+
+  .project-card-git-container {
+    margin: 1.6em 0;
+  }
+
+  .project-card-title {
+    font-size: 2.2em;
+    margin-bottom: 1em;
+  }
+  
+  .project-card-git-link {
+    font-size: 2em;
+  }
+
+  .carousel {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carousel {
+    width: 85%;
+  }
+
+  .carousel-item {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 854px) {
+  .carousel-item {
+    height: 47vh;
+  }
+
+  .project-card-git-container {
+    margin: 1em 0;
+  }
+
+  .project-card-title {
+    font-size: 1.9em;
+    margin-bottom: 1em;
+  }
+  
+  .project-card-git-link {
+    font-size: 1.7em;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .header-hamburger {
     display: block;
   }
@@ -386,11 +465,17 @@ input[type="radio"]:checked:after {
     margin: 0;
   }
 
-  .projects-container {
-    grid-template-columns: repeat(1, 1fr);
-    column-gap: 10px;
-    row-gap: 2em;
-    margin: 30px;
+  .project-card-git-container {
+    margin: 1.1em 0;
+  }
+
+  .project-card-title {
+    font-size: 1.7em;
+    margin-bottom: 1em;
+  }
+  
+  .project-card-git-link {
+    font-size: 1.5em;
   }
 
   .carousel {
@@ -403,14 +488,148 @@ input[type="radio"]:checked:after {
   }
 }
 
-@keyframes navMenuSlide {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 3.5em;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
+  h3 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .projects-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .project-card-git-container {
+    margin: 2.2em 0;
+  }
+
+  .project-card-title {
+    font-size: 2.7em;
+    margin-bottom: 1em;
+  }
+  
+  .project-card-git-link {
+    font-size: 2.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .project-card-git-container {
+    margin: 2.1em 0;
+  }
+
+  .project-card-title {
+    font-size: 2.8em;
+  }
+
+  .project-card-git-link {
+    font-size: 2.6em;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .project-card-git-container {
+    margin: 1.9em 0;
+  }
+
+  .project-card-title {
+    font-size: 2.6em;
+  }
+
+  .project-card-git-link {
+    font-size: 2.4em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    font-size: 1.4em;
+  }
+
+  h1 {
+    font-size: 2.3em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+
+  .project-card-git-container {
+    margin: 1.4em 0;
+  }
+
+  .project-card-title {
+    font-size: 2em;
+  }
+
+  .project-card-git-link {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h3 {
+    font-size: 0.8em;
+  }
+
+  .project-card-git-container {
+    margin: 1em 0;
+  }
+
+  .project-card-title {
+    font-size: 1.7em;
+  }
+
+  .project-card-git-link {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .section {
+    font-size: 1.2em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+
+  .project-card-title {
+    font-size: 1.5em;
+  }
+
+  .project-card-git-link {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  h1 {
+    font-size: 1.2em;
+  }
+
+  .project-card-git-container {
+    margin: 0.7em 0;
+  }
+
+  .project-card-title {
+    font-size: 1.1em;
+  }
+
+  .project-card-git-link {
+    font-size: 0.9em;
   }
 }
 

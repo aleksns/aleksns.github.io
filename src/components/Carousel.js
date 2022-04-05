@@ -28,11 +28,13 @@ export default function Carousel() {
   function CarouselContent(props) {
     const { item, index } = props;
     return (
+      <div className="carousel-item-container">
       <img
         src={item}
         className="carousel-item"
         // style={{ width: itemWidth }}
       ></img>
+     </div>
     );
   }
 
@@ -50,17 +52,17 @@ export default function Carousel() {
   }
 
   useEffect(() => {
-    if (!isMouseOver && matchMedia("(pointer:fine)").matches) {
-      const timer = setInterval(() => {
-        handleIndexChange(currentIndex + 1);
+    // if (!isMouseOver && matchMedia("(pointer:fine)").matches) {
+    //   const timer = setInterval(() => {
+    //     handleIndexChange(currentIndex + 1);
 
-        if (currentIndex >= maxIndex) {
-          handleIndexChange(0);
-        }
-      }, 15000);
+    //     if (currentIndex >= maxIndex) {
+    //       handleIndexChange(0);
+    //     }
+    //   }, 15000);
 
-      return () => clearInterval(timer);
-    }
+    //   return () => clearInterval(timer);
+    // }
   });
 
   return (
@@ -80,15 +82,15 @@ export default function Carousel() {
           onTouchEnd={endTouch}
         >
           <div
-            className="carousel-inner"
-            style={{ transform: `translateX(-${currentIndex * 200}%)` }}
+            className="carousel-slides"
+            style={{ transform: `translateX(-${currentIndex * 250}%)` }}
           >
             {listOfCatPics.map((item, index) => (
               <CarouselContent key={item.id} item={item.image} index={index}/>
             ))}
           </div>
 
-          <div className="center-section carousel-radio section-header">
+          <div className="center-section carousel-radio-section">
             {listOfCatPics.map((item, index) => (
               <CarouselRadio key={index} item={item} index={index} />
             ))}
