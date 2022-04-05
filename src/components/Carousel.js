@@ -70,7 +70,7 @@ export default function Carousel() {
       <div className="center-section">
         <button
           onClick={() => handleIndexChange(currentIndex - 1)}
-          className="carousel-btn"
+          className="carousel-btn carousel-btn-prev"
         >
          {`<`}
         </button>
@@ -98,7 +98,7 @@ export default function Carousel() {
         </div>
         <button
           onClick={() => handleIndexChange(currentIndex + 1)}
-          className="carousel-btn"
+          className="carousel-btn carousel-btn-next"
         >
           {`>`}
         </button>

@@ -1,5 +1,6 @@
 :root {
   --grey-dark: #444444;
+  --carousel-btn: rgb(68, 68, 68, 0.8);
   --grey-darker: #292929;
   --grey-light: #818181;
   --white-bone: #cfcfcf;
@@ -106,6 +107,10 @@ h4 {
   height: 10vh;
 }
 
+.nav-main a {
+  font-size: 1.2em;
+}
+
 .header {
   width: 100%;
   height: inherit;
@@ -114,6 +119,14 @@ h4 {
   top: 0;
   left: 0;
   z-index: 10;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 2em;
+  justify-content: right;
+  background-color: var(--grey-darker);
 }
 
 .header-content {
@@ -142,14 +155,6 @@ h4 {
   transition-duration: 0s;
 }
 
-.footer {
-  position: relative;
-  bottom: 0;
-  margin-top: 3em;
-  justify-content: right;
-  background-color: var(--grey-darker);
-}
-
 .nav-header-links a {
   margin-left: 2em;
 }
@@ -175,6 +180,7 @@ h4 {
   height: 0.15em;
   background-color: white;
 }
+
 
 /* Projects, Project-Card */
 .projects-container {
@@ -269,12 +275,12 @@ h4 {
 /* Carousel */
 .carousel {
   overflow: hidden;
-  width: 60%;
+  width: 100%;
 }
 
 .carousel-slides {
   white-space: nowrap;
-  transition: transform 0.6s;
+  transition: transform 0.4s;
   width: 100%;
 }
 
@@ -289,7 +295,6 @@ h4 {
 
 .carousel-item {
   max-width: 100%;
-  /* height: 25em; */
   height: 50vh;
   border-radius: var(--border-radius-card-cat);
 }
@@ -298,23 +303,31 @@ h4 {
   color: white;
   font-size: 1.5rem;
   font-weight: 900;
-  width: 1.5em;
-  height: 1.5em;
-  margin: 0.3em;
-  padding: 0.3em;
+  width: 2em;
+  height: 2em;
   align-self: center;
-  background-color: var(--grey-dark);
-  opacity: 0.75;
+  background-color: var(--carousel-btn);
   border-radius: 50%;
   border: none;
   cursor: pointer;
-  box-sizing: content-box;
+  position: absolute;
+  padding: 0.3em;
+  margin: 0 15em;
+  z-index: 5;
+  /* box-sizing: content-box; */
+}
+
+.carousel-btn-prev {
+  left: 0;
+}
+
+.carousel-btn-next {
+  right: 0;
 }
 
 .carousel-btn:hover {
   background-color: var(--grey-darker);
   color: var(--emerald-shine);
-  opacity: 1.0;
 }
 
 .carousel-radio-section {
@@ -324,13 +337,13 @@ h4 {
 
 /* Radio */
 input[type="radio"] {
-  background-color: var(--white-bone);
-  border-radius: 50%;
-  cursor: pointer;
   height: 0.75rem;
   width: 0.75rem;
+  background-color: var(--white-bone);
+  border-radius: 50%;
   margin-right: 1rem;
   position: relative;
+  cursor: pointer;
   -webkit-appearance: none;
 }
 
@@ -367,19 +380,28 @@ input[type="radio"]:checked:after {
   }
 } 
 
-@media screen and (max-width: 1200px) {
-  .carousel {
-    width: 65%;
+@media screen and (max-width: 1366px) {
+  .carousel-btn {
+    margin: 0 10em;
   }
 }
 
-@media screen and (max-width: 1125px) {
-  .carousel {
-    width: 70%;
+@media screen and (max-width: 1280px) {
+  .carousel-btn {
+    margin: 0 8em;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1170px) {
+  .carousel-btn {
+    margin: 0 6em;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .carousel-btn {
+    margin: 0 4em;
+  }
   .section {
     font-size: 1.7em;
   }
@@ -403,25 +425,23 @@ input[type="radio"]:checked:after {
   .project-card-git-link {
     font-size: 2em;
   }
+}
 
-  .carousel {
-    width: 80%;
+@media screen and (max-width: 1024px) {
+  .carousel-btn {
+    margin: 0 2em;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .carousel {
-    width: 85%;
-  }
-
-  .carousel-item {
-    height: 50vh;
+  .carousel-btn {
+    margin: 0 1em;
   }
 }
 
 @media screen and (max-width: 854px) {
-  .carousel-item {
-    height: 47vh;
+  .carousel-btn {
+    margin: 0 0.6em;
   }
 
   .project-card-git-container {
@@ -439,6 +459,10 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 768px) {
+  .carousel-item {
+    height: 47.5vh;
+  }
+  
   .header-hamburger {
     display: block;
   }
@@ -479,7 +503,6 @@ input[type="radio"]:checked:after {
   }
 
   .carousel {
-    width: 100%;
     margin: 0 5%;
   }
 
@@ -489,6 +512,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 720px) {
+  .carousel-item {
+    height: 42vh;
+  }
   h1 {
     font-size: 3.5em;
   }
@@ -498,6 +524,15 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 640px) {
+  .carousel-item {
+    height: 38vh;
+  }
+
+  input[type="radio"] {
+    height: 0.7rem;
+    width: 0.7rem;
+  }
+
   .projects-container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -517,6 +552,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 600px) {
+  .carousel-item {
+    height: 35.5vh;
+  }
   h1 {
     font-size: 3em;
   }
@@ -538,6 +576,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 540px) {
+  .carousel-item {
+    height: 31.5vh;
+  }
   .project-card-git-container {
     margin: 1.9em 0;
   }
@@ -552,6 +593,14 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 480px) {
+  .carousel-item {
+    height: 30vh;
+  }
+  input[type="radio"] {
+    height: 0.65rem;
+    width: 0.65rem;
+    margin-right: 0.8rem;
+  }
   .section {
     font-size: 1.4em;
   }
@@ -576,7 +625,22 @@ input[type="radio"]:checked:after {
   }
 }
 
+@media screen and (max-width: 414px) {
+  .carousel-item {
+    height: 26vh;
+  }
+}
+
 @media screen and (max-width: 380px) {
+  .carousel-item {
+    height: 23vh;
+  }
+  input[type="radio"] {
+    height: 0.6rem;
+    width: 0.6rem;
+    margin-right: 0.65rem;
+  }
+
   h1 {
     font-size: 1.8em;
   }
@@ -599,6 +663,12 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 320px) {
+  .carousel-item {
+    height: 20vh;
+  }
+    input[type="radio"] {
+    margin-right: 0.5rem;
+  }
   .section {
     font-size: 1.2em;
   }
@@ -616,6 +686,12 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 270px) {
+  .carousel-item {
+    height: 17vh;
+  }
+  input[type="radio"] {
+    margin-right: 0.4rem;
+  }
   h1 {
     font-size: 1.2em;
   }
