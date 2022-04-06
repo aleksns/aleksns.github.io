@@ -69,8 +69,6 @@ h4 {
 }
 
 .hero-image {
-  /* height: 100%;
-  width: 100%; */
   height: 100vh;
   width: 100vw;
   background-position: center;
@@ -85,8 +83,13 @@ h4 {
 }
 
 .hero-projects-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)),
   url("./images/projectsTitle.jpg");
+}
+
+.hero-mycat-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.9)),
+  url("./images/catTitle.jpg");
 }
 
 .hero-text-container {
@@ -134,7 +137,7 @@ h4 {
 .footer {
   position: relative;
   bottom: 0;
-  margin-top: 2em;
+  margin-top: 5em;
   justify-content: right;
   background-color: var(--grey-darker);
 }
@@ -146,6 +149,11 @@ h4 {
 .header-section {
   border-left: 4px solid var(--emerald-shine);
   border-right: 4px solid var(--emerald-shine);
+}
+
+.section-line {
+  width: 20%;
+  border-bottom: 4px solid var(--emerald-shine);
 }
 
 .section {
@@ -189,6 +197,21 @@ h4 {
   width: 1.5em;
   height: 0.15em;
   background-color: white;
+}
+
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  margin: 5em;
+  font-size: 1em;
+}
+
+.contacts-email {
+  margin-top: 0.5em;
+  color: var(--emerald-shine);
+  font-weight: 600;
 }
 
 
@@ -341,7 +364,7 @@ h4 {
 }
 
 .carousel-radio-section {
-  margin: 1em 0;
+  margin-top: 1em;
 }
 
 
@@ -397,6 +420,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 1280px) {
+  .hero-image {
+    height: 90vh;
+  }
   .carousel-btn {
     margin: 0 8em;
   }
@@ -406,14 +432,21 @@ input[type="radio"]:checked:after {
   .carousel-btn {
     margin: 0 6em;
   }
+  .hero-image {
+    height: 85vh;
+  }
 }
 
 @media screen and (max-width: 1080px) {
+  .hero-image {
+    height: 80vh;
+  }
   .carousel-btn {
     margin: 0 4em;
   }
   .section {
     font-size: 1.7em;
+    margin: 1.5em 0 1.5em 0;
   }
 
   .projects-container {
@@ -438,18 +471,27 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 1024px) {
+  .hero-image {
+    height: 75vh;
+  }
   .carousel-btn {
     margin: 0 2em;
   }
 }
 
 @media screen and (max-width: 900px) {
+  .hero-image {
+    height: 70vh;
+  }
   .carousel-btn {
     margin: 0 1em;
   }
 }
 
 @media screen and (max-width: 854px) {
+  .hero-image {
+    height: 65vh;
+  }
   .carousel-btn {
     margin: 0 0.6em;
   }
@@ -469,6 +511,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 768px) {
+  .hero-image {
+    height: 60vh;
+  }
   .carousel-item {
     height: 47.5vh;
   }
@@ -522,6 +567,12 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 720px) {
+  .hero-image {
+    height: 55vh;
+  }
+  .section {
+    margin: 1em 0 1em 0;
+  }
   .carousel-item {
     height: 42vh;
   }
@@ -534,6 +585,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 640px) {
+  .hero-image {
+    height: 50vh;
+  }
   .carousel-item {
     height: 38vh;
   }
@@ -562,6 +616,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 600px) {
+  .hero-image {
+    height: 45vh;
+  }
   .carousel-item {
     height: 35.5vh;
   }
@@ -586,6 +643,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 540px) {
+  .hero-image {
+    height: 40vh;
+  }
   .carousel-item {
     height: 31.5vh;
   }
@@ -603,6 +663,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 480px) {
+  .hero-image {
+    height: 35vh;
+  }
   .carousel-item {
     height: 30vh;
   }
@@ -613,6 +676,7 @@ input[type="radio"]:checked:after {
   }
   .section {
     font-size: 1.4em;
+      margin: 0.5em 0 0.5em 0;
   }
 
   h1 {
@@ -636,12 +700,19 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 414px) {
+  .hero-image {
+    height: 30vh;
+  }
   .carousel-item {
     height: 26vh;
   }
 }
 
 @media screen and (max-width: 380px) {
+  .contacts-container {
+    font-size: 0.8em;
+  }
+  
   .carousel-item {
     height: 23vh;
   }
@@ -673,6 +744,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 320px) {
+  .hero-image {
+    height: 25vh;
+  }
   .carousel-item {
     height: 20vh;
   }

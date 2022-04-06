@@ -1,6 +1,5 @@
 import { NavLink } from 'react-router-dom';
 import '../App.css';
-import siteLogoImg from "../images/siteLogo.png";
 import GitLink from './GitLink';
 
 export default function Header() {

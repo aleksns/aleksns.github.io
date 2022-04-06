@@ -10,6 +10,9 @@ export default function Projects() {
           <h3>High quality stuff</h3>
         </div>
       </div>
+
+      <div className="section"></div>
+
     <ProjectsSection />
     </>
   );

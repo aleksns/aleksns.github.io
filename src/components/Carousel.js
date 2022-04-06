@@ -52,17 +52,17 @@ export default function Carousel() {
   }
 
   useEffect(() => {
-    // if (!isMouseOver && matchMedia("(pointer:fine)").matches) {
-    //   const timer = setInterval(() => {
-    //     handleIndexChange(currentIndex + 1);
+    if (!isMouseOver && matchMedia("(pointer:fine)").matches) {
+      const timer = setInterval(() => {
+        handleIndexChange(currentIndex + 1);
 
-    //     if (currentIndex >= maxIndex) {
-    //       handleIndexChange(0);
-    //     }
-    //   }, 15000);
+        if (currentIndex >= maxIndex) {
+          handleIndexChange(0);
+        }
+      }, 15000);
 
-    //   return () => clearInterval(timer);
-    // }
+      return () => clearInterval(timer);
+    }
   });
 
   return (

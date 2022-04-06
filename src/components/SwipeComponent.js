@@ -15,16 +15,8 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
 
   function swipe() {
     if (endX - startX < -swipeStep) {
-      // if(current !== -(window.innerHeight * 5)){
-      //   current -= window.innerHeight;
-      //   setCurrentIndex(currentIndex + 1);
-      // }
       handleIndexChange(currentIndex + 1);
     } else if (endX - startX > swipeStep) {
-      // if(current !== 0){
-      //   current += window.innerHeight;
-      //   setCurrentIndex(currentIndex - 1);
-      // }
       handleIndexChange(currentIndex - 1);
     }
   }
