@@ -126,7 +126,7 @@ color: white;
 }
 
 .nav-main a {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .header {
@@ -240,7 +240,6 @@ color: white;
 }
 
 
-
 .contacts-container {
   display: flex;
   flex-direction: column;
@@ -320,7 +319,6 @@ color: white;
   font-size: 2em;
   text-align: center;
   color: var(--emerald-shine);
-  /* margin-bottom: 1em; */
 }
 
 .project-card-description {
@@ -339,7 +337,6 @@ color: white;
 
 .project-card-link {
   margin: 0 0.3em;
-
   font-size: 1.2em;
   border: 0.08em solid white;
   padding: 0.2em;
@@ -466,6 +463,14 @@ input[type="radio"]:checked:after {
   .carousel-btn {
     margin: 0 10em;
   }
+  .project-card-title {
+    font-size: 1.7em;
+  }
+  
+  .project-card-description {
+    margin: 1em 1em;
+    font-size: 1.1em;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -475,6 +480,13 @@ input[type="radio"]:checked:after {
   .carousel-btn {
     margin: 0 8em;
   }
+  .project-card-title {
+    font-size: 1.6em;
+  }
+  
+  .project-card-description {
+    font-size: 1em;
+  }
 }
 
 @media screen and (max-width: 1170px) {
@@ -483,6 +495,18 @@ input[type="radio"]:checked:after {
   }
   .hero-image {
     height: 85vh;
+  }
+
+  .project-card-title {
+    font-size: 1.4em;
+  }
+  
+  .project-card-description {
+    font-size: 0.95em;
+  }
+  
+  .project-card-link {
+    font-size: 1.1em;
   }
 }
 
@@ -505,17 +529,18 @@ input[type="radio"]:checked:after {
     margin: 2em;
   }
 
-  .project-card-link-wrapper {
-    margin: 1.6em 0;
-  }
-
   .project-card-title {
-    font-size: 2.2em;
-    margin-bottom: 1em;
+    font-size: 1.8em;
+  }
+  
+  .project-card-description {
+    margin: 1.5em 1.5em;
+    font-size: 1.25em;
   }
   
   .project-card-link {
-    font-size: 2em;
+    margin: 0 0.3em;
+    font-size: 1.4em;
   }
 }
 
@@ -525,6 +550,33 @@ input[type="radio"]:checked:after {
   }
   .carousel-btn {
     margin: 0 2em;
+  }
+
+  .project-card-title {
+    font-size: 1.65em;
+  }
+  
+  .project-card-description {
+    font-size: 1.25em;
+  }
+  
+  .project-card-link {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .project-card-title {
+    font-size: 1.5em;
+  }
+  
+  .project-card-description {
+    margin: 1.3em 1.3em;
+    font-size: 1.15em;
+  }
+  
+  .project-card-link {
+    font-size: 1.1em;
   }
 }
 
@@ -545,17 +597,17 @@ input[type="radio"]:checked:after {
     margin: 0 0.6em;
   }
 
-  .project-card-link-wrapper {
-    margin: 1em 0;
-  }
-
   .project-card-title {
-    font-size: 1.9em;
-    margin-bottom: 1em;
+    font-size: 1.3em;
+  }
+  
+  .project-card-description {
+    margin: 1.2em 1.2em;
+    font-size: 1em;
   }
   
   .project-card-link {
-    font-size: 1.7em;
+    font-size: 1em;
   }
 }
 
@@ -566,7 +618,13 @@ input[type="radio"]:checked:after {
   .carousel-item {
     height: 47.5vh;
   }
-  
+  .carousel {
+    margin: 0 5%;
+  }
+  .carousel-btn {
+    display: none;
+  }
+
   .header-hamburger {
     display: block;
   }
@@ -593,25 +651,17 @@ input[type="radio"]:checked:after {
     margin: 0;
   }
 
-  .project-card-link-wrapper {
-    margin: 1.1em 0;
-  }
-
   .project-card-title {
-    font-size: 1.7em;
-    margin-bottom: 1em;
+    font-size: 1.2em;
+  }
+  
+  .project-card-description {
+    margin: 1em 1em;
+    font-size: 0.95em;
   }
   
   .project-card-link {
-    font-size: 1.5em;
-  }
-
-  .carousel {
-    margin: 0 5%;
-  }
-
-  .carousel-btn {
-    display: none;
+    font-size: 0.95em;
   }
 }
 
@@ -630,6 +680,19 @@ input[type="radio"]:checked:after {
   }
   h3 {
     font-size: 1.4em;
+  }
+
+  .project-card-title {
+    font-size: 1.1em;
+  }
+  
+  .project-card-description {
+    margin: 0.85em 0.85em;
+    font-size: 0.85em;
+  }
+  
+  .project-card-link {
+    font-size: 0.85em;
   }
 }
 
@@ -650,17 +713,17 @@ input[type="radio"]:checked:after {
     grid-template-columns: repeat(1, 1fr);
   }
 
-  .project-card-link-wrapper {
-    margin: 2.2em 0;
-  }
-
   .project-card-title {
-    font-size: 2.7em;
-    margin-bottom: 1em;
+    font-size: 1.9em;
+  }
+  
+  .project-card-description {
+    margin: 1.4em 1.4em;
+    font-size: 1.35em;
   }
   
   .project-card-link {
-    font-size: 2.5em;
+    font-size: 1.3em;
   }
 }
 
@@ -678,16 +741,16 @@ input[type="radio"]:checked:after {
     font-size: 1.2em;
   }
 
-  .project-card-link-wrapper {
-    margin: 2.1em 0;
-  }
-
   .project-card-title {
-    font-size: 2.8em;
+    font-size: 1.7em;
   }
-
+  
+  .project-card-description {
+    font-size: 1.2em;
+  }
+  
   .project-card-link {
-    font-size: 2.6em;
+    font-size: 1.15em;
   }
 }
 
@@ -698,16 +761,16 @@ input[type="radio"]:checked:after {
   .carousel-item {
     height: 31.5vh;
   }
-  .project-card-link-wrapper {
-    margin: 1.9em 0;
-  }
 
   .project-card-title {
-    font-size: 2.6em;
+    font-size: 1.5em;
   }
-
+  .project-card-description {
+    margin: 1.2em 1.2em;
+    font-size: 1.05em;
+  }
   .project-card-link {
-    font-size: 2.4em;
+    font-size: 1.1em;
   }
 }
 
@@ -735,16 +798,15 @@ input[type="radio"]:checked:after {
     font-size: 1em;
   }
 
-  .project-card-link-wrapper {
-    margin: 1.4em 0;
-  }
-
   .project-card-title {
-    font-size: 2em;
+    font-size: 1.3em;
   }
-
+  .project-card-description {
+    margin: 1em 1em;
+    font-size: 0.9em;
+  }
   .project-card-link {
-    font-size: 1.8em;
+    font-size: 0.9em;
   }
 }
 
@@ -754,6 +816,16 @@ input[type="radio"]:checked:after {
   }
   .carousel-item {
     height: 26vh;
+  }
+
+  .project-card-title {
+    font-size: 1.2em;
+  }
+  .project-card-description {
+    font-size: 0.85em;
+  }
+  .project-card-link {
+    font-size: 0.85em;
   }
 }
 
@@ -779,16 +851,14 @@ input[type="radio"]:checked:after {
     font-size: 0.8em;
   }
 
-  .project-card-link-wrapper {
-    margin: 1em 0;
-  }
-
   .project-card-title {
-    font-size: 1.7em;
+    font-size: 1.05em;
   }
-
+  .project-card-description {
+    font-size: 0.7em;
+  }
   .project-card-link {
-    font-size: 1.5em;
+    font-size: 0.7em;
   }
 }
 
@@ -810,11 +880,13 @@ input[type="radio"]:checked:after {
   }
 
   .project-card-title {
-    font-size: 1.5em;
+    font-size: 0.9em;
   }
-
+  .project-card-description {
+    font-size: 0.6em;
+  }
   .project-card-link {
-    font-size: 1.3em;
+    font-size: 0.6em;
   }
 }
 
@@ -829,16 +901,14 @@ input[type="radio"]:checked:after {
     font-size: 1.2em;
   }
 
-  .project-card-link-wrapper {
-    margin: 0.7em 0;
-  }
-
   .project-card-title {
-    font-size: 1.1em;
+    font-size: 0.8em;
   }
-
+  .project-card-description {
+    font-size: 0.5em;
+  }
   .project-card-link {
-    font-size: 0.9em;
+    font-size: 0.5em;
   }
 }
 

@@ -14,8 +14,7 @@ export default function CatSection(props) {
   </h4>
   <p className="section-text-content">
   It is quite deceptive. She tricks you into thinking that 
-  there is no "royal blood" in her, but her Scottish Fold roots were documented 
-  (documents were lost, though)
+  there is no "royal blood" in her, but her Scottish Fold genes reveal themselves the more you look
   </p>
 
   <h4 className="section-text-content-headline">
@@ -28,7 +27,7 @@ export default function CatSection(props) {
   </p>
 
   <h4 className="section-text-content-headline">
-    To the previous question - the boulders on Mars cast shadows and the cat doesn't. How so?
+    To the previous question - the boulders on Mars cast shadows and your cat doesn't. How so?
   </h4>
   <p className="section-text-content">
   Egyptians believed cats were magical beings. I don't see why such potent creatures 
