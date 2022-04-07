@@ -5,10 +5,11 @@ export default function CatSection(props) {
   const { classes } = props;
   return (
     <>
-<h2 className={classes}>FAQ</h2>
+    <div className="section"></div>
+   
+  <h2 className={classes}>FAQ</h2>
 
 <div className="section-text-container">
-  
   <h4 className="section-text-content-headline">
     Why does an average looking cat have it's own site section?
   </h4>
@@ -35,7 +36,7 @@ export default function CatSection(props) {
   </p>
 
   <h4 className="section-text-content-headline">
-    Where is she on a "Chonk Scale" ?
+    Where is she on a "Chonk Scale"?
   </h4>
   <p className="section-text-content">
     A solid Hefty Chonk. But a very healthy cat

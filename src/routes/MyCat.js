@@ -10,8 +10,6 @@ export default function MyCat() {
         </div>
       </div>
 
-      <div className="section"></div>
-
     <CatSection classes={"section header-section"}/>
     </>
   );
