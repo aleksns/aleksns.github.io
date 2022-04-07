@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import Contacts from "./routes/Contacts";
+import ContactMe from "./routes/ContactMe";
 import Home from "./routes/Home";
 import MyCat from "./routes/MyCat";
 import Projects from "./routes/Projects";
@@ -11,7 +11,7 @@ import Projects from "./routes/Projects";
 export default function App() {
 
   function hamMenuSlide() {
-    const homeBtn = document.getElementById("home-btn");
+    const homeBtn = document.getElementById("home-button");
     const hamburger = document.querySelector(".header-hamburger");
     const nav = document.querySelector(".nav-header-links");
 
@@ -37,7 +37,7 @@ export default function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/mycat" element={<MyCat />} />
-        <Route path="/contacts" element={<Contacts />} />  
+        <Route path="/contactme" element={<ContactMe />} />  
       </Routes>
     );
   }

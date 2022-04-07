@@ -1,8 +1,7 @@
 import "../App.css";
 import { EMAIL } from "../services/.imports";
 
-export default function Contacts() {
-  console.log(process.env);
+export default function ContactMe() {
   return (
     <>
     <div className="contacts-container">

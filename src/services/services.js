@@ -5,6 +5,7 @@ import commentsPickerImg from "../images/projects/commentsPicker.png";
 import employeesTableImg from "../images/projects/employeesTable.png";
 import calculatorImg from "../images/projects/calculator.png";
 
+import cat0Img from "../images/cat/cat0.jpg";
 import cat1Img from "../images/cat/cat1.jpg";
 import cat2Img from "../images/cat/cat2.jpg";
 import cat3Img from "../images/cat/cat3.jpg";
@@ -22,6 +23,7 @@ export const listOfProjects = [
     {
         id: "space-brawl",
         title: "Space Brawl",
+        description: "Arcade Shooter browser game. Destroy enemies, use skills, collect coins to gain experience, and LVL UP your ship. 3 Ship Tiers with unique ship models and guns. Be aware of The Boss!",
         image: spaceBrawlImg,
         url: "https://github.com/aleksns/space-brawl",
         urlDemo: "https://aleksns.github.io/space-brawl/"
@@ -29,6 +31,7 @@ export const listOfProjects = [
     {
         id: "impressive-painter",
         title: "Impressive Painter",
+        description: "Drawing App with different tools - brushes, shapes, eraser, rainbow mode, etc. Save your masterpiece after you are done or shyly delete it - the buttons are there. If you need to draw something impressive, this is the way to go",
         image: impressivePainterImg,
         url: "https://github.com/aleksns/impressive-painter",
         urlDemo: "https://aleksns.github.io/impressive-painter/"
@@ -36,6 +39,7 @@ export const listOfProjects = [
     {
         id: "spa-employees-table",
         title: "Employees Table",
+        description: "App to work with a server database table. Allows operating with work-related/personal information of an employee. CRUD operations, searching, sorting, in-built data calculations",
         image: employeesTableImg,
         url: "https://github.com/aleksns/spa-employees-table",
         urlDemo: undefined
@@ -43,6 +47,7 @@ export const listOfProjects = [
     {
         id: "comments-picker",
         title: "Comments Picker",
+        description: "Got something to give away? Got people who have left comments eager to win a prize? Want to raffle off a prize with a convenient app? Seek no more, this is it!",
         image: commentsPickerImg,
         url: "https://github.com/aleksns/comments-picker",
         urlDemo: "https://aleksns.github.io/comments-picker/"
@@ -50,6 +55,7 @@ export const listOfProjects = [
     {
         id: "dots-connector",
         title: "Dots Connector",
+        description: "In case you will casually need to connect dots with lines - use this app. Configure the number of dots, color, animation, and randomness",
         image: dotsConnectorImg,
         url: "https://github.com/aleksns/dots-connector",
         urlDemo: "https://aleksns.github.io/dots-connector/"
@@ -57,6 +63,7 @@ export const listOfProjects = [
     {
         id: "calculator",
         title: "Calculator",
+        description: "Android Calculator with MDAS function and real-time calculation. Deletion of elements updates the result, light and dark themes, strict input validation (operators, commas, zeroes, etc), and other features",
         image: calculatorImg,
         url: "https://github.com/aleksns/Calculator",
         urlDemo: undefined
@@ -66,6 +73,11 @@ export const listOfProjects = [
 //export const listOfCatPics = [...document.querySelectorAll('cat.png')];
 
 export const listOfCatPics = [
+    {
+        id: "0",
+        title: "Cat 0",
+        image: cat0Img,
+    },
     {
         id: "1",
         title: "Cat 1",

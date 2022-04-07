@@ -52,7 +52,7 @@ export default function Carousel() {
   }
 
   useEffect(() => {
-    if (!isMouseOver && matchMedia("(pointer:fine)").matches) {
+    if (!isMouseOver && matchMedia("(pointer:fine)").matches && currentIndex !=0) {
       const timer = setInterval(() => {
         handleIndexChange(currentIndex + 1);
 

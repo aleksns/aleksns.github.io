@@ -12,7 +12,7 @@ export default function MyCat() {
 
       <div className="section"></div>
 
-    <CatSection />
+    <CatSection classes={"section header-section"}/>
     </>
   );
 }

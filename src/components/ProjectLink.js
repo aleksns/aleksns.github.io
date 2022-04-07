@@ -10,15 +10,15 @@ export default function ProjectLink(props) {
   };
 
   return (
-    <div className="project-card-git-container"
-    >
+    // <div className="project-card-link-wrapper"
+    // >
       <a
-        className="project-card-git-link"
+        className="project-card-link"
         underline="none"
         onClick={openInNewTab}
       >
         {title}
       </a>
-    </div>
+   
   );
 }
