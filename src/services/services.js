@@ -74,67 +74,67 @@ export const listOfProjects = [
 
 export const listOfCatPics = [
     {
-        id: "0",
+        id: "catId0",
         title: "Cat 0",
         image: cat0Img,
     },
     {
-        id: "1",
+        id: "catId1",
         title: "Cat 1",
         image: cat1Img,
     },
     {
-        id: "2",
+        id: "catId2",
         title: "Cat 2",
         image: cat2Img,
     },
     {
-        id: "3",
+        id: "catId3",
         title: "Cat 3",
         image: cat3Img,
     },
     {
-        id: "4",
+        id: "catId4",
         title: "Cat 4",
         image: cat4Img,
     },
     {
-        id: "5",
+        id: "catId5",
         title: "Cat 5",
         image: cat5Img,
     },
     {
-        id: "6",
+        id: "catId6",
         title: "Cat 6",
         image: cat6Img,
     },
     {
-        id: "7",
+        id: "catId7",
         title: "Cat 7",
         image: cat7Img,
     },
     {
-        id: "8",
+        id: "catId8",
         title: "Cat 8",
         image: cat8Img,
     },
     {
-        id: "9",
+        id: "catId9",
         title: "Cat 9",
         image: cat9Img,
     },
     {
-        id: "10",
+        id: "catId10",
         title: "Cat 10",
         image: cat10Img,
     },
     {
-        id: "11",
+        id: "catId11",
         title: "Cat 11",
         image: cat11Img,
     },
     {
-        id: "12",
+        id: "catId12",
         title: "Cat 12",
         image: cat12Img,
     },

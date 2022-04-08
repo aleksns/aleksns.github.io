@@ -29,7 +29,8 @@ export default function Carousel() {
     return (
       <div className="carousel-item-container">
       <img
-        src={item}
+        id={item.id}
+        src={item.image}
         className="carousel-item"
         // style={{ width: itemWidth }}
       ></img>
@@ -43,7 +44,7 @@ export default function Carousel() {
       <input
         checked={index == currentIndex ? true : false}
         type="radio"
-        id={item.id}
+        id={index}
         name="catPics"
         onChange={() => handleIndexChange(index)}
       />
@@ -53,11 +54,18 @@ export default function Carousel() {
   function touchEvents() {
     //const carousel = document.querySelector(".carousel");
     //const carousel = document.getElementById("carousel-main");
-    const carouselItem = document.querySelector(".carousel-item");
+    //const carouselItem = document.querySelector(".carousel-item");
 
-    carouselItem.addEventListener("touchstart", startTouch, false);
-    carouselItem.addEventListener("touchend", endTouch, false);
-    carouselItem.addEventListener("touchmove", moveTouch, false);
+    for(let i = 0; i < listOfCatPics.length; i++) {
+      let id = listOfCatPics[i].id;
+      const item = document.getElementById(id);
+      item.addEventListener("touchstart", startTouch, false);
+      item.addEventListener("touchend", endTouch, false);
+      item.addEventListener("touchmove", moveTouch, false);
+    }
+    // carouselItem.addEventListener("touchstart", startTouch, false);
+    // carouselItem.addEventListener("touchend", endTouch, false);
+    // carouselItem.addEventListener("touchmove", moveTouch, false);
   }
 
   useEffect(() => {
@@ -100,7 +108,7 @@ export default function Carousel() {
             style={{ transform: `translateX(-${currentIndex * 250}%)` }}
           >
             {listOfCatPics.map((item, index) => (
-              <CarouselContent key={item.id} item={item.image} index={index}/>
+              <CarouselContent key={item.id} item={item} index={index}/>
             ))}
           </div>
 
