@@ -59,6 +59,14 @@ h4 {
   font-size: 1.5em;
 }
 
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+}
+
 .home-link-img {
   width: 90px;
   height: 20px;
@@ -351,6 +359,15 @@ h4 {
   white-space: nowrap;
   transition: transform 0.4s;
   width: 100%;
+}
+
+.carousel-slides::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 10000%;
+  height: 100%;
 }
 
 .carousel-item-container {

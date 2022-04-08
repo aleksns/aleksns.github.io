@@ -4,6 +4,27 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
   var startX = undefined;
   var endX = undefined;
 
+  var startXMouse = undefined;
+  var endXMouse = undefined;
+
+  function startClick(e) {
+    e.preventDefault();
+    e.stopPropagation()
+    startXMouse = e.clientX;
+  }
+
+  function endClick(e) {
+    endXMouse = e.clientX;
+    swipe(startXMouse, endXMouse);
+  }
+
+  function moveMouse(e) {
+    if (e.cancelable) {
+      e.preventDefault();
+      e.stopPropagation();
+    }  
+  }
+
   function startTouch(e) {
     // if (e.type == 'touchstart') {
     //   e.preventDefault();
@@ -19,13 +40,19 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
     endX = e.changedTouches[0].clientX;
     // e.stopPropagation();
     // e.preventDefault();
-    swipe();
+    swipe(startX, endX);
   }
 
-  function swipe() {
-    if (endX - startX < -swipeStep) {
+  function swipe(start, end) {
+    // if (endX - startX < -swipeStep) {
+    //   handleIndexChange(currentIndex + 1);
+    // } else if (endX - startX > swipeStep) {
+    //   handleIndexChange(currentIndex - 1);
+    // }
+    //console.log(`startX = ${start}, endX = ${end}`)
+    if (end - start < -swipeStep) {
       handleIndexChange(currentIndex + 1);
-    } else if (endX - startX > swipeStep) {
+    } else if (end - start > swipeStep) {
       handleIndexChange(currentIndex - 1);
     }
   }
@@ -43,5 +70,8 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
     startTouch,
     endTouch,
     moveTouch,
+    startClick,
+    endClick,
+    moveMouse
   };
 }

@@ -9,7 +9,7 @@ export default function Carousel() {
   const maxIndex = listOfCatPics.length - 1;
   const [isMouseOver, setIsMouseOver] = useState(false);
   
-  const { startTouch, endTouch, moveTouch } = SwipeComponent(
+  const { startTouch, endTouch, moveTouch, startClick, endClick, moveMouse } = SwipeComponent(
     currentIndex,
     handleIndexChange
   );
@@ -54,6 +54,11 @@ export default function Carousel() {
   function touchEvents() {
     //const carousel = document.querySelector(".carousel");
     //const carousel = document.getElementById("carousel-main");
+    //const carousel = document.querySelector(".carousel");
+
+    //  carousel.addEventListener("mousedown", startClick, false);
+    //  carousel.addEventListener("mouseup", endClick, false);
+    //  carousel.addEventListener("mousemove", moveMouse, false);
     //const carouselItem = document.querySelector(".carousel-item");
 
     for(let i = 0; i < listOfCatPics.length; i++) {
