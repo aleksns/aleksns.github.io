@@ -5,11 +5,20 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
   var endX = undefined;
 
   function startTouch(e) {
+    // if (e.type == 'touchstart') {
+    //   e.preventDefault();
+    //   e.stopPropagation();
+    // }
     startX = e.touches[0].clientX;
   }
 
   function endTouch(e) {
+    //   if (e.cancelable) {
+    //     e.preventDefault();
+    //  }
     endX = e.changedTouches[0].clientX;
+    // e.stopPropagation();
+    // e.preventDefault();
     swipe();
   }
 
@@ -22,7 +31,12 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
   }
 
   function moveTouch(e) {
-    e.preventDefault();
+    if (e.cancelable) {
+      e.preventDefault();
+    }
+    // if (e.type !== 'touchstart') {
+    //   e.stopPropagation();
+    // }
   }
 
   return {

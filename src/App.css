@@ -344,6 +344,7 @@ h4 {
 .carousel {
   overflow: hidden;
   width: 100%;
+  touch-action: none;
 }
 
 .carousel-slides {

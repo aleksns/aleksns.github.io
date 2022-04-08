@@ -9,7 +9,7 @@ export default function Carousel() {
   const maxIndex = listOfCatPics.length - 1;
   const [isMouseOver, setIsMouseOver] = useState(false);
   
-  const { startTouch, endTouch } = SwipeComponent(
+  const { startTouch, endTouch, moveTouch } = SwipeComponent(
     currentIndex,
     handleIndexChange
   );
@@ -21,7 +21,6 @@ export default function Carousel() {
     } else if (newIndex >= maxIndex) {
       newIndex = maxIndex;
     }
-
     setCurrentIndex(newIndex);
   }
 
@@ -51,19 +50,33 @@ export default function Carousel() {
     );
   }
 
+  function touchEvents() {
+    //const carousel = document.querySelector(".carousel");
+    //const carousel = document.getElementById("carousel-main");
+    const carouselItem = document.querySelector(".carousel-item");
+
+    carouselItem.addEventListener("touchstart", startTouch, false);
+    carouselItem.addEventListener("touchend", endTouch, false);
+    carouselItem.addEventListener("touchmove", moveTouch, false);
+  }
+
   useEffect(() => {
-    if (!isMouseOver && matchMedia("(pointer:fine)").matches && currentIndex !=0) {
-      const timer = setInterval(() => {
-        handleIndexChange(currentIndex + 1);
+    // if (!isMouseOver && matchMedia("(pointer:fine)").matches && currentIndex !=0) {
+    //   const timer = setInterval(() => {
+    //     handleIndexChange(currentIndex + 1);
 
-        if (currentIndex >= maxIndex) {
-          handleIndexChange(0);
-        }
-      }, 15000);
+    //     if (currentIndex >= maxIndex) {
+    //       handleIndexChange(0);
+    //     }
+    //   }, 15000);
 
-      return () => clearInterval(timer);
-    }
+    //   return () => clearInterval(timer);
+    // }
   });
+
+  useEffect(() => {
+    touchEvents();
+  }, []);
 
   return (
     <>
@@ -75,6 +88,7 @@ export default function Carousel() {
          {`<`}
         </button>
         <div
+          id="carousel-main"
           className="carousel"
           onMouseEnter={() => setIsMouseOver(true)}
           onMouseLeave={() => setIsMouseOver(false)}
