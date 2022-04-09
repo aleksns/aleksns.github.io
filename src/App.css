@@ -202,11 +202,6 @@ img {
   padding: 0 0.5em;
 }
 
-.section-line {
-  width: 20%;
-  border-bottom: 4px solid var(--emerald-shine);
-}
-
 .section {
   margin: 2em 0 2em 0;
   font-size: 2em;
@@ -750,7 +745,7 @@ input[type="radio"]:checked:after {
     font-size: 1.4em;
   }
   .section-text-container {
-    margin: 0 3em;
+    margin: 0 1.5em;
   }
   .section-text-content-headline {
     font-size: 1.3em;
@@ -776,6 +771,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 540px) {
+  .header-section {
+    width: 85%;
+  }
   .hero-image {
     height: 40vh;
   }
@@ -860,7 +858,7 @@ input[type="radio"]:checked:after {
     font-size: 1.2em;
   }
   .section-text-container {
-    margin: 0 2em;
+    margin: 0 1em;
   }
   .section-text-content-headline {
     font-size: 1.2em;
@@ -904,7 +902,7 @@ input[type="radio"]:checked:after {
     font-size: 1em;
   }
   .section-text-container {
-    margin: 0 1.5em;
+    margin: 0 1em;
   }
   .section-text-content-headline {
     font-size: 1em;

@@ -2,13 +2,12 @@ import "../App.css";
 import ProjectCard from "../components/ProjectCard";
 import { listOfProjects } from "../services/services";
 
-export default function ProjectsSection(props) {
-  const { classes } = props;
+export default function ProjectsSection() {
   return (
     <>
     <div className="section"></div>
     
-      <h2 className={classes}>Tech Stacks I Use in The Projects</h2>
+      <h2 className="section header-section">Tech Stacks I Use in The Projects</h2>
 
       <div className="section-text-container">
         <h4 className="section-text-content-headline">

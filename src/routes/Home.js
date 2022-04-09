@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <HeroSection />
 
-      <ProjectsSection classes={"section-sub"} />
+      <ProjectsSection />
 
       <h2 className="section header-section">My Cat</h2>
       <CatSection classes={"section-sub"} />

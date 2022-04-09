@@ -4,8 +4,7 @@ export default function Footer() {
   return (
     <div className="nav-main footer">
         <div>
-            {/* <p>All rights reserved</p> */}
-            <p>Test 6.0</p>
+            <p>All rights reserved</p>
         </div>
     </div>
   );

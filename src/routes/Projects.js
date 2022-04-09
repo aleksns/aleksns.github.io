@@ -11,7 +11,7 @@ export default function Projects() {
         </div>
       </div>
 
-      <ProjectsSection classes={"section header-section"}/>
+      <ProjectsSection />
     </>
   );
 }
