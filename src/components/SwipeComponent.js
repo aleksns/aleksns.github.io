@@ -36,7 +36,7 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
 
   function moveTouch(e) {
     if (e.cancelable) {
-      //e.preventDefault();
+      e.preventDefault();
     }
     // if (e.type !== 'touchstart') {
     //   e.stopPropagation();

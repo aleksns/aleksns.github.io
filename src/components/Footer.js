@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="nav-main footer">
         <div>
             {/* <p>All rights reserved</p> */}
-            <p>Test 5.0</p>
+            <p>Test 5.1f</p>
         </div>
     </div>
   );

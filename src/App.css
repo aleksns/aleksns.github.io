@@ -352,7 +352,7 @@ img {
 .carousel {
   overflow: hidden;
   width: 100%;
-  touch-action: none;
+  /* touch-action: none; */
 }
 
 .carousel-slides {
