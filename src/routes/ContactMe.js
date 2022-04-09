@@ -4,7 +4,7 @@ import { EMAIL } from "../services/.imports";
 export default function ContactMe() {
   return (
     <>
-    <div className="contacts-container">
+    <div className="contactme-container">
         <h2>
            Send me an email
         </h2>

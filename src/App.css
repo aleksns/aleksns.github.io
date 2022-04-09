@@ -235,12 +235,12 @@ img {
   color: var(--emerald-shine);
 }
 
-.contacts-container {
+.contactme-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  margin: 5em;
+  margin: 2em;
   font-size: 1em;
 }
 
@@ -851,7 +851,7 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 380px) {
-  .contacts-container {
+  .contactme-container {
     font-size: 0.8em;
   }
   .section-sub {
