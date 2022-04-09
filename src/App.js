@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import CarouselTest from "./components/CarouselTest";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import ContactMe from "./routes/ContactMe";
@@ -43,15 +44,17 @@ export default function App() {
   }
 
   useEffect(() => {
-    hamMenuSlide();
+    //hamMenuSlide();
   }, []);
 
   return (
     <>
     <div className="content">
-      <Header />
+    <CarouselTest />
+    <Footer />
+      {/* <Header />
       <RoutesComponent />
-      <Footer />
+      <Footer /> */}
       </div>
     </>
   );

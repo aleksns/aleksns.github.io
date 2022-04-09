@@ -352,7 +352,7 @@ img {
 .carousel {
   overflow: hidden;
   width: 100%;
-  touch-action: none;
+  /* touch-action: none; */
 }
 
 .carousel-slides {
@@ -361,14 +361,14 @@ img {
   width: 100%;
 }
 
-.carousel-slides::before {
+/* .carousel-slides::before {
   content: '';
   position: absolute;
   top: 0;
   left: 100%;
   width: 10000%;
   height: 100%;
-}
+} */
 
 .carousel-item-container {
   display: inline-flex;
