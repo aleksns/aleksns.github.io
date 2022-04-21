@@ -53,20 +53,20 @@ export const listOfProjects = [
         urlDemo: "https://aleksns.github.io/comments-picker/"
     },
     {
-        id: "dots-connector",
-        title: "Dots Connector",
-        description: "In case you will casually need to connect dots with lines - use this app. Configure the number of dots, color, animation, and randomness",
-        image: dotsConnectorImg,
-        url: "https://github.com/aleksns/dots-connector",
-        urlDemo: "https://aleksns.github.io/dots-connector/"
-    },
-    {
         id: "calculator",
         title: "Calculator",
         description: "Android Calculator with MDAS function and real-time calculation. Deletion of elements updates the result, light and dark themes, strict input validation (operators, commas, zeroes, etc), and other features",
         image: calculatorImg,
         url: "https://github.com/aleksns/Calculator",
         urlDemo: undefined
+    },
+    {
+        id: "dots-connector",
+        title: "Dots Connector",
+        description: "In case you will casually need to connect dots with lines - use this app. Configure the number of dots, color, animation, and randomness",
+        image: dotsConnectorImg,
+        url: "https://github.com/aleksns/dots-connector",
+        urlDemo: "https://aleksns.github.io/dots-connector/"
     },
 ]
 

@@ -10,8 +10,6 @@ export default function ProjectLink(props) {
   };
 
   return (
-    // <div className="project-card-link-wrapper"
-    // >
       <a
         className="project-card-link"
         underline="none"

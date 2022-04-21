@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
@@ -9,6 +9,7 @@ import MyCat from "./routes/MyCat";
 import Projects from "./routes/Projects";
 
 export default function App() {
+  const [isButtonScrollToTopVisible, setIsButtonScrollToTopVisible] = useState(false);
 
   function hamMenuSlide() {
     const homeBtn = document.getElementById("home-button");
@@ -31,6 +32,22 @@ export default function App() {
     }, false)
   }
 
+  useEffect(() => {
+    function handleButtonScrollToTop() {
+      let documentBottom = document.body.scrollHeight;
+      let scrolledDistance = document.documentElement.scrollTop;
+      if (scrolledDistance > documentBottom / 3){
+        setIsButtonScrollToTopVisible(true)
+      } 
+      else if (scrolledDistance <= documentBottom  / 3){
+        setIsButtonScrollToTopVisible(false)
+      }
+    }
+    
+    window.addEventListener("scroll", handleButtonScrollToTop);
+    hamMenuSlide();
+  }, []);
+
   function RoutesComponent() {
     return (
       <Routes>
@@ -42,16 +59,12 @@ export default function App() {
     );
   }
 
-  useEffect(() => {
-    hamMenuSlide();
-  }, []);
-
   return (
     <>
     <div className="content">
       <Header />
       <RoutesComponent />
-      <Footer />
+      <Footer isButtonScrollToTopVisible={isButtonScrollToTopVisible}/>
       </div>
     </>
   );

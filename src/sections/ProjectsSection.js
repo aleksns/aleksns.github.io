@@ -14,19 +14,19 @@ export default function ProjectsSection() {
           Languages / Markup, StyleSheet
         </h4>
         <p className="section-text-content">
-          JavaScript, Java, SQL, HTML, CSS, SCSS, Sass
+          JavaScript, Java, HTML, CSS, SCSS, Sass
         </p>
 
         <h4 className="section-text-content-headline">
-          Frameworks / Libraries / REs
+          Frameworks / Libraries / REs / Others
         </h4>
         <p className="section-text-content">
           React, Node.js, Express, JQuery, JRE, Bootstrap, MUI, Spring Boot,
           Jest, React Testing Library, Spring Cloud, Maven, Hibernate, REST API,
-          JPA, Postman API, Nexus, Gradle
+          JPA, Postman API, Nexus, Gradle, WordPress
         </p>
 
-        <h4 className="section-text-content-headline">Database</h4>
+        <h4 className="section-text-content-headline">Databases</h4>
         <p className="section-text-content">MongoDB, SQL, PostgreSQL, MySQL</p>
 
         <h4 className="section-text-content-headline">Deployment</h4>

@@ -3,7 +3,6 @@ import "../App.css";
 import { listOfCatPics } from "../services/services";
 import SwipeComponent from "./SwipeComponent";
 
-const itemWidth = "100%";
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const maxIndex = listOfCatPics.length - 1;
@@ -31,6 +30,7 @@ export default function Carousel() {
       <img
         id={item.id}
         src={item.image}
+        alt="Carousel Content"
         className="carousel-item"
         onTouchStart={startTouch}
         onTouchEnd={endTouch}
@@ -54,7 +54,7 @@ export default function Carousel() {
     );
   }
 
-  function touchEvents() {
+ // function touchEvents() {
     //const carousel = document.querySelector(".carousel");
     //const carousel = document.getElementById("carousel-id");
     //const carousel = document.querySelector(".carousel");
@@ -80,7 +80,7 @@ export default function Carousel() {
     // carouselItem.addEventListener("touchstart", startTouch, false);
     // carouselItem.addEventListener("touchend", endTouch, false);
     // carouselItem.addEventListener("touchmove", moveTouch, false);
-  }
+ // }
 
   useEffect(() => {
     // if (!isMouseOver && matchMedia("(pointer:fine)").matches && currentIndex !=0) {
@@ -96,9 +96,9 @@ export default function Carousel() {
     // }
   });
 
-  useEffect(() => {
-    //touchEvents();
-  }, []);
+  // useEffect(() => {
+  //   //touchEvents();
+  // }, []);
 
   return (
     <>
