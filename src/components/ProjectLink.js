@@ -10,13 +10,8 @@ export default function ProjectLink(props) {
   };
 
   return (
-      <a
-        className="project-card-link"
-        underline="none"
-        onClick={openInNewTab}
-      >
-        {title}
-      </a>
-   
+    <button className="project-card-link" onClick={openInNewTab}>
+      {title}
+    </button>
   );
 }

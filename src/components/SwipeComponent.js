@@ -14,10 +14,10 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
   }
 
   function endTouch(e) {
-        endX = e.changedTouches[0].clientX;
-        // e.stopPropagation();
-        // e.preventDefault();
-        swipe(startX, endX);
+    endX = e.changedTouches[0].clientX;
+    // e.stopPropagation();
+    // e.preventDefault();
+    swipe(startX, endX);
   }
 
   function swipe(start, end) {
@@ -26,7 +26,7 @@ export default function SwipeComponent(currentIndex, handleIndexChange) {
     // } else if (endX - startX > swipeStep) {
     //   handleIndexChange(currentIndex - 1);
     // }
-    
+
     if (end - start < -swipeStep) {
       handleIndexChange(currentIndex + 1);
     } else if (end - start > swipeStep) {

@@ -7,12 +7,11 @@ export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const maxIndex = listOfCatPics.length - 1;
   const [isMouseOver, setIsMouseOver] = useState(false);
-  
+
   const { startTouch, endTouch, moveTouch } = SwipeComponent(
     currentIndex,
     handleIndexChange
   );
-  
 
   function handleIndexChange(newIndex) {
     if (newIndex < 0) {
@@ -27,17 +26,17 @@ export default function Carousel() {
     const { item, index } = props;
     return (
       <div className="carousel-item-container">
-      <img
-        id={item.id}
-        src={item.image}
-        alt="Carousel Content"
-        className="carousel-item"
-        onTouchStart={startTouch}
-        onTouchEnd={endTouch}
-        onTouchMove={moveTouch}
-        // style={{ width: itemWidth }}
-      ></img>
-     </div>
+        <img
+          id={item.id}
+          src={item.image}
+          alt="Carousel Content"
+          className="carousel-item"
+          onTouchStart={startTouch}
+          onTouchEnd={endTouch}
+          onTouchMove={moveTouch}
+          // style={{ width: itemWidth }}
+        ></img>
+      </div>
     );
   }
 
@@ -54,44 +53,42 @@ export default function Carousel() {
     );
   }
 
- // function touchEvents() {
-    //const carousel = document.querySelector(".carousel");
-    //const carousel = document.getElementById("carousel-id");
-    //const carousel = document.querySelector(".carousel");
+  // function touchEvents() {
+  //const carousel = document.querySelector(".carousel");
+  //const carousel = document.getElementById("carousel-id");
+  //const carousel = document.querySelector(".carousel");
 
-    //  carousel.addEventListener("mousedown", startClick, false);
-    //  carousel.addEventListener("mouseup", endClick, false);
-    //  carousel.addEventListener("mousemove", moveMouse, false);
+  //  carousel.addEventListener("mousedown", startClick, false);
+  //  carousel.addEventListener("mouseup", endClick, false);
+  //  carousel.addEventListener("mousemove", moveMouse, false);
 
-    // const carouselItem = document.getElementById("carousel-id");
+  // const carouselItem = document.getElementById("carousel-id");
 
-    // carouselItem.addEventListener("touchstart", startTouch, false);
-    // carouselItem.addEventListener("touchend", endTouch, false);
-    // carouselItem.addEventListener("touchmove", moveTouch, false);
+  // carouselItem.addEventListener("touchstart", startTouch, false);
+  // carouselItem.addEventListener("touchend", endTouch, false);
+  // carouselItem.addEventListener("touchmove", moveTouch, false);
 
-    // for(let i = 0; i < listOfCatPics.length; i++) {
-    //   let id = listOfCatPics[i].id;
-    //   const item = document.getElementById(id);
-    //   item.addEventListener("touchstart", startTouch, false);
-    //   item.addEventListener("touchend", endTouch, false);
-    //   item.addEventListener("touchmove", moveTouch, false);
-    // }
+  // for(let i = 0; i < listOfCatPics.length; i++) {
+  //   let id = listOfCatPics[i].id;
+  //   const item = document.getElementById(id);
+  //   item.addEventListener("touchstart", startTouch, false);
+  //   item.addEventListener("touchend", endTouch, false);
+  //   item.addEventListener("touchmove", moveTouch, false);
+  // }
 
-    // carouselItem.addEventListener("touchstart", startTouch, false);
-    // carouselItem.addEventListener("touchend", endTouch, false);
-    // carouselItem.addEventListener("touchmove", moveTouch, false);
- // }
+  // carouselItem.addEventListener("touchstart", startTouch, false);
+  // carouselItem.addEventListener("touchend", endTouch, false);
+  // carouselItem.addEventListener("touchmove", moveTouch, false);
+  // }
 
   useEffect(() => {
     // if (!isMouseOver && matchMedia("(pointer:fine)").matches && currentIndex !=0) {
     //   const timer = setInterval(() => {
     //     handleIndexChange(currentIndex + 1);
-
     //     if (currentIndex >= maxIndex) {
     //       handleIndexChange(0);
     //     }
     //   }, 15000);
-
     //   return () => clearInterval(timer);
     // }
   });
@@ -107,7 +104,7 @@ export default function Carousel() {
           onClick={() => handleIndexChange(currentIndex - 1)}
           className="carousel-btn carousel-btn-prev"
         >
-         {`<`}
+          {`<`}
         </button>
         <div
           id="carousel-id"
@@ -124,7 +121,7 @@ export default function Carousel() {
             style={{ transform: `translateX(-${currentIndex * 250}%)` }}
           >
             {listOfCatPics.map((item, index) => (
-              <CarouselContent key={item.id} item={item} index={index}/>
+              <CarouselContent key={item.id} item={item} index={index} />
             ))}
           </div>
 

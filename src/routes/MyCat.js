@@ -4,13 +4,13 @@ import CatSection from "../sections/CatSection";
 export default function MyCat() {
   return (
     <>
-    <div className="hero-image hero-mycat-image">
+      <div className="hero-image hero-mycat-image">
         <div className="hero-text-container">
           <h1>My Cat</h1>
         </div>
       </div>
 
-    <CatSection classes={"section header-section"}/>
+      <CatSection classes={"section header-section"} />
     </>
   );
 }

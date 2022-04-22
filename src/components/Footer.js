@@ -1,4 +1,5 @@
 import "../App.css";
+import arrowUpImg from "../images/arrowUp.png";
 
 export default function Footer(props) {
   const { isButtonScrollToTopVisible } = props;
@@ -12,16 +13,18 @@ export default function Footer(props) {
 
   return (
     <div className="nav-main footer">
-      <div>
-        <p>All rights reserved</p>
-        <button
-          className="btn-totop"
-          onClick={handleScrollToTop}
-          style={{ display: isButtonScrollToTopVisible ? "block" : "none" }}
-        >
-          🡱
-        </button>
-      </div>
+      <p>All rights reserved</p>
+      <button
+        className="btn-totop"
+        onClick={handleScrollToTop}
+        style={{ display: isButtonScrollToTopVisible ? "block" : "none" }}
+      >
+        <img
+          src={arrowUpImg}
+          alt="Arrow Button"
+          className="btn-totop-icon"
+        ></img>
+      </button>
     </div>
   );
 }

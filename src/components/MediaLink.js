@@ -9,10 +9,8 @@ export default function MediaLink(props) {
   };
 
   return (
-    // <a role="button" underline="none" onClick={openInNewTab}>
     <button className="btn-media" onClick={openInNewTab}>
       <img src={icon} alt="Media Logo" className="media-icon"></img>
       </button>
-    // </a>
   );
 }
