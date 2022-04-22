@@ -10,7 +10,7 @@ export default function MediaLink(props) {
 
   return (
     <button className="btn-media" onClick={openInNewTab}>
-      <img src={icon} alt="Media Logo" className="media-icon"></img>
+      <img src={icon} alt="media logo" className="media-icon"></img>
       </button>
   );
 }

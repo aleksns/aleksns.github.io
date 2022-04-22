@@ -307,7 +307,8 @@ img {
   border-radius: var(--border-radius-card);
   width: 100%;
   height: 100%;
-  box-shadow: 0px 0px 2px 1px var(--emerald-light);
+  border: 1px solid var(--emerald-light);
+  /* box-shadow: 0px 0px 2px 1px var(--emerald-light); */
 }
 
 .project-card:hover {
@@ -324,7 +325,7 @@ img {
 }
 
 .project-card:hover > .project-card-img {
-  opacity: 0.15;
+  opacity: 0.25;
 }
 
 .project-card-content {
@@ -348,8 +349,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: var(--border-radius-card);
-  background: linear-gradient(transparent 75%, var(--emerald-light));
-  background: -webkit-linear-gradient(transparent 75%, var(--emerald-light));
+  background-color: rgb(129, 129, 129, 0.2);
 }
 
 .project-card-title {
@@ -379,35 +379,20 @@ img {
   padding: 0.2em;
 }
 
+
 /* Carousel */
 .carousel {
   overflow: hidden;
   width: 100%;
-  /* touch-action: none; */
+  touch-action: none;
+  padding-bottom: 1em;
 }
-
-.carousel-slides {
-  white-space: nowrap;
-  transition: transform 0.4s;
-  width: 100%;
-}
-
-/* .carousel-slides::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 10000%;
-  height: 100%;
-} */
 
 .carousel-item-container {
-  display: inline-flex;
-  align-items: center;
-  align-self: center;
+  display: flex;
   justify-content: center;
-  width: 100%;
-  margin-right: 150%;
+  align-items: center;
+  animation: fadeWithScale 0.8s ease;
 }
 
 .carousel-item {
@@ -431,16 +416,12 @@ img {
   z-index: 5;
   /* box-sizing: content-box; */
 }
-
 .carousel-btn-prev {
   left: 0;
 }
-
 .carousel-btn-next {
   right: 0;
 }
-
-
 .carousel-radio-section {
   margin-top: 1em;
 }
@@ -470,6 +451,7 @@ input[type="radio"]:after {
 input[type="radio"]:checked:after {
   background-color: var(--grey-darker);
   box-shadow: 0 0 0 1px var(--grey-darker);
+  animation: pulse 0.4s ease;
 }
 
 /* Scrollbar*/
@@ -1025,8 +1007,6 @@ input[type="radio"]:checked:after {
   }
 }
 
-
-
 /* Components Animation*/
 @keyframes slowFloatDown {
 	0% {
@@ -1036,6 +1016,29 @@ input[type="radio"]:checked:after {
 	100% {
 		opacity: 1;
 		transform: translateY(0px);
+	}
+}
+
+@keyframes fadeWithScale {
+  0% {
+    opacity: 0;
+    transform: scale(1.04);
+  }
+  100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+		transform: scale(2);
+	}
+  100% {
+		transform: scale(1);
 	}
 }
 

@@ -21,7 +21,7 @@ export default function Footer(props) {
       >
         <img
           src={arrowUpImg}
-          alt="Arrow Button"
+          alt="arrow button"
           className="btn-totop-icon"
         ></img>
       </button>
