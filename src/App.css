@@ -102,8 +102,6 @@ img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("./images/stonehenge.jpg");
   background-attachment: fixed;
-  position: static;
-  height: 60vh;
   animation: blurOut 2s ease;
 }
 
@@ -667,6 +665,9 @@ input[type="radio"]:checked:after {
 @media screen and (max-width: 768px) {
   .hero-image {
     height: 60vh;
+  }
+  .hero-quote-image {
+    background-attachment: scroll;
   }
   .section-text-container {
     margin: 0 7.5%;
