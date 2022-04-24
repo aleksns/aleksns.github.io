@@ -102,6 +102,7 @@ img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("./images/stonehenge.jpg");
   background-attachment: fixed;
+  position: static;
   height: 60vh;
   animation: blurOut 2s ease;
 }
@@ -717,9 +718,6 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 720px) {
-  .hero-image {
-    height: 55vh;
-  }
   .carousel-item {
     height: 42vh;
   }
@@ -747,9 +745,6 @@ input[type="radio"]:checked:after {
 @media screen and (max-width: 640px) {
   h1 {
     font-size: 3.3em;
-  }
-  .hero-image {
-    height: 50vh;
   }
   .carousel-item {
     height: 38vh;
@@ -785,9 +780,6 @@ input[type="radio"]:checked:after {
   h3 {
     font-size: 1.2em;
   }
-  .hero-image {
-    height: 45vh;
-  }
   .section-sub {
     font-size: 1.4em;
   }
@@ -822,9 +814,6 @@ input[type="radio"]:checked:after {
   .header-section {
     width: 85%;
   }
-  .hero-image {
-    height: 40vh;
-  }
   .carousel-item {
     height: 31.5vh;
   }
@@ -842,9 +831,6 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 480px) {
-  .hero-image {
-    height: 35vh;
-  }
   .section-text-container {
     margin: 0 5%;
   }
@@ -882,9 +868,6 @@ input[type="radio"]:checked:after {
 @media screen and (max-width: 414px) {
   .section {
     font-size: 1.7em;
-  }
-  .hero-image {
-    height: 30vh;
   }
   .carousel-item {
     height: 26vh;
@@ -938,9 +921,6 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 320px) {
-  .hero-image {
-    height: 25vh;
-  }
   .section-sub {
     font-size: 1em;
   }
