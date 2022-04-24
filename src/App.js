@@ -3,10 +3,11 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import ContactMe from "./routes/ContactMe";
+import Contact from "./routes/Contact";
 import Home from "./routes/Home";
 import MyCat from "./routes/MyCat";
 import Projects from "./routes/Projects";
+import AboutSection from "./sections/AboutSection";
 
 export default function App() {
   const [isButtonScrollToTopVisible, setIsButtonScrollToTopVisible] = useState(false);
@@ -52,9 +53,10 @@ export default function App() {
     return (
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<AboutSection />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/mycat" element={<MyCat />} />
-        <Route path="/contactme" element={<ContactMe />} />  
+        <Route path="/contact" element={<Contact />} />  
       </Routes>
     );
   }

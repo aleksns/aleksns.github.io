@@ -18,9 +18,10 @@ export default function Header() {
       </NavLink>
 
       <ul className="nav-header-links">
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/mycat">My Cat</NavLink>
-        <NavLink to="/contactme">Contact</NavLink>
+        <NavLink to="/about">ABOUT</NavLink>
+        <NavLink to="/projects">PROJECTS</NavLink>
+        <NavLink to="/mycat">MY CAT</NavLink>
+        <NavLink to="/contact">CONTACT</NavLink>
         <MediaLink id="github-link-id" icon={gitLogo} url={gitUrl} />
         <MediaLink
           id="linkedin-link-id"

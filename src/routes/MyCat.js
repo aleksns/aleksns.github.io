@@ -6,7 +6,7 @@ export default function MyCat() {
     <>
       <div className="hero-image hero-mycat-image">
         <div className="hero-text-container">
-          <h1>My Cat</h1>
+          <h1>MY CAT</h1>
         </div>
       </div>
 

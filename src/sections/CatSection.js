@@ -5,7 +5,6 @@ export default function CatSection(props) {
   const { classes } = props;
   return (
     <>
-      <div className="section"></div>
 
       <h2 className={classes}>FAQ</h2>
 

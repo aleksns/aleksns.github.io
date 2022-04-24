@@ -5,7 +5,7 @@ export default function HeroSection() {
     <>
       <div className="hero-image hero-profile-image">
         <div className="hero-text-container">
-          <h1>Aleksandr Nazarov</h1>
+          <h1>ALEKSANDR NAZAROV</h1>
           <h3>Software Developer</h3>
         </div>
       </div>
