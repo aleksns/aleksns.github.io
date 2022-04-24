@@ -1,12 +1,11 @@
 import "../App.css";
 import Carousel from "../components/Carousel";
 
-export default function CatSection(props) {
-  const { classes } = props;
+export default function CatSection() {
   return (
     <>
 
-      <h2 className={classes}>FAQ</h2>
+      <h2 className="section header-section">FAQ</h2>
 
       <div className="section-text-container">
         <h4 className="section-text-content-headline">

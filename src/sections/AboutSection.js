@@ -5,10 +5,10 @@ export default function AboutSection() {
     <div>
 
       <div style={{ position: "relative" }}>
-        <div className="hero-image hero-quote-image"></div>
+        <div className="hero-image hero-image-quote"></div>
         <div className="hero-text-container">
           <h1>An Inspirational Quote</h1>
-          <h3>That makes you say, "Huh... That's true"</h3>
+          <h3>That makes you say, "Huh... That's so true"</h3>
         </div>
       </div>
 
@@ -34,7 +34,7 @@ export default function AboutSection() {
           not.
         </p>
 
-        <h4 className="section-text-content-headline">I love traveling.</h4>
+        <h4 className="section-text-content-headline" style={{fontWeight: "normal"}}>I love traveling.</h4>
       </div>
     </div>
   );

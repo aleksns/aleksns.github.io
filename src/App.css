@@ -93,24 +93,24 @@ img {
   animation: slowFloatDown 1.5s ease;
 }
 
-.hero-profile-image {
+.hero-image-profile {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
     url("./images/profileTitle.jpg");
 }
 
-.hero-quote-image {
+.hero-image-quote {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("./images/stonehenge.jpg");
   background-attachment: fixed;
   animation: blurOut 2s ease;
 }
 
-.hero-projects-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+.hero-image-projects {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),
     url("./images/projectsTitle.jpg");
 }
 
-.hero-mycat-image {
+.hero-image-mycat {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
     url("./images/catTitle.jpg");
 }
@@ -243,8 +243,14 @@ img {
 }
 
 .section {
-  margin: 2em 0 2em 0;
   font-size: 2.5em;
+  margin: 2.5em 0 2.5em 0;
+  display: inline-block;
+}
+
+.section-small {
+  font-size: 2.5em;
+  margin: 1.5em 0 1.5em 0;
   display: inline-block;
 }
 
@@ -666,7 +672,7 @@ input[type="radio"]:checked:after {
   .hero-image {
     height: 60vh;
   }
-  .hero-quote-image {
+  .hero-image-quote {
     background-attachment: scroll;
   }
   .section-text-container {
@@ -832,6 +838,9 @@ input[type="radio"]:checked:after {
 }
 
 @media screen and (max-width: 480px) {
+  .hero-image-projects, .hero-image-mycat {
+    height: 40vh;
+  }
   .section-text-container {
     margin: 0 5%;
   }
