@@ -101,12 +101,8 @@ img {
 .hero-quote-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("./images/stonehenge.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-attachment: fixed;
   height: 60vh;
-  width: 100vw;
   animation: blurOut 2s ease;
 }
 
