@@ -8,7 +8,7 @@ export default function AboutSection() {
         <div className="hero-quote-image"></div>
         <div className="hero-text-container">
           <h1>An Inspirational Quote</h1>
-          <h3>That makes you say "Huh... That's true"</h3>
+          <h3>That makes you say, "Huh... That's true"</h3>
         </div>
       </div>
 

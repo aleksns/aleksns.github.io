@@ -71,7 +71,6 @@ h3 {
   font-size: 1.6em;
 }
 
-
 img {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
@@ -102,6 +101,9 @@ img {
 .hero-quote-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
     url("./images/stonehenge.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: fixed;
   height: 60vh;
   width: 100vw;
@@ -874,10 +876,10 @@ input[type="radio"]:checked:after {
   }
   .project-card-description {
     margin: 1em 1em;
-    font-size: 0.9em;
+    font-size: 1em;
   }
   .project-card-link {
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 
@@ -893,13 +895,13 @@ input[type="radio"]:checked:after {
   }
 
   .project-card-title {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .project-card-description {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
   .project-card-link {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 }
 
@@ -928,16 +930,6 @@ input[type="radio"]:checked:after {
 
   h3 {
     font-size: 0.8em;
-  }
-
-  .project-card-title {
-    font-size: 1.1em;
-  }
-  .project-card-description {
-    font-size: 0.9em;
-  }
-  .project-card-link {
-    font-size: 0.9em;
   }
   .btn-totop-icon {
     padding: 0.4em;
@@ -1043,10 +1035,10 @@ input[type="radio"]:checked:after {
 
 @keyframes blurOut {
   0% {
-    filter: blur(0.7em) brightness(120%) saturate(120%) opacity(50%);
+    filter: blur(0.4em) brightness(120%) saturate(120%);
   }
   100% {
-    filter: blur(0) brightness(100%) saturate(100%) opacity(100%);
+    filter: blur(0) brightness(100%) saturate(100%);
   }
 }
 
