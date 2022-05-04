@@ -10,7 +10,7 @@ export default function SkillsSection() {
           Languages / Markup, StyleSheet
         </h4>
         <p className="section-text-content">
-          JavaScript, Java, HTML, CSS, SCSS, Sass
+          JavaScript, Java, TypeScript, HTML, CSS, SCSS, Sass
         </p>
 
         <h4 className="section-text-content-headline">
