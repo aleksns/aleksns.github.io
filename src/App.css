@@ -94,6 +94,7 @@ img {
 }
 
 .hero-image-profile {
+  background-size: contain;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)),
     url("./images/profileTitle.jpg");
 }
@@ -124,6 +125,10 @@ img {
   transform: translate(-50%, -50%);
   color: white;
   white-space: nowrap;
+}
+
+.hero-text-container-profile {
+  top: 90%;
 }
 
 /* Header / Nav Menu */
