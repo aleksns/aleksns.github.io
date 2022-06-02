@@ -145,6 +145,10 @@ img {
   z-index: 20;
 }
 
+.main-content {
+  padding-top: 10vh;
+}
+
 .home-btn {
   border-bottom: 2px solid var(--emerald-shine);
 }

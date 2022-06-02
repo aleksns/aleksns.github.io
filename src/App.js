@@ -64,8 +64,10 @@ export default function App() {
   return (
     <>
       <Header />
+      <div className="main-content">
       <RoutesComponent />
       <Footer isButtonScrollToTopVisible={isButtonScrollToTopVisible}/>
+      </div>
     </>
   );
 }
