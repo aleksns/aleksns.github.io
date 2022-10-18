@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.19a53ebc.css",
-    "main.js": "/static/js/main.8093b881.js",
+    "main.css": "/static/css/main.eafc2eb5.css",
+    "main.js": "/static/js/main.6b1fb4e2.js",
     "static/media/profileTitle.jpg": "/static/media/profileTitle.2828b68d233d0c2f41b6.jpg",
-    "static/media/impressivePainter.png": "/static/media/impressivePainter.246623589c0aff259248.png",
-    "static/media/spaceBrawl.png": "/static/media/spaceBrawl.67c921ca84bf622367d2.png",
-    "static/media/commentsPicker.png": "/static/media/commentsPicker.a215351a87e85458b455.png",
-    "static/media/employeesTable.png": "/static/media/employeesTable.d86a01bcdf79828b798e.png",
+    "static/media/catsPhotographer.png": "/static/media/catsPhotographer.8b24be80c27a262e3790.png",
+    "static/media/spaceBrawl.png": "/static/media/spaceBrawl.df08de7454443dd94411.png",
     "static/media/stonehenge.jpg": "/static/media/stonehenge.8d67feb876dee0df181e.jpg",
     "static/media/cat0.jpg": "/static/media/cat0.c570629254c00b5a2d4b.jpg",
     "static/media/catTitle.jpg": "/static/media/catTitle.c570629254c00b5a2d4b.jpg",
     "static/media/cat7.jpg": "/static/media/cat7.d1b8ca4364e712e6a575.jpg",
     "static/media/cat10.jpg": "/static/media/cat10.181c2fe0668cf83d96ac.jpg",
     "static/media/cat8.jpg": "/static/media/cat8.848a130f60c3baf5d6b9.jpg",
+    "static/media/employeesTable.png": "/static/media/employeesTable.76a56732a93a443ee923.png",
+    "static/media/commentsPicker.png": "/static/media/commentsPicker.c121b97f5c10acc994b8.png",
     "static/media/cat3.jpg": "/static/media/cat3.8851b7ae52701a105ba0.jpg",
     "static/media/cat6.jpg": "/static/media/cat6.27ddc750b0db57cc2d5a.jpg",
     "static/media/cat11.jpg": "/static/media/cat11.bf9707f5336356262404.jpg",
     "static/media/cat12.jpg": "/static/media/cat12.77072afa6623ab33e14b.jpg",
     "static/media/cat9.jpg": "/static/media/cat9.db47b09d216ecb1af561.jpg",
+    "static/media/impressivePainter.png": "/static/media/impressivePainter.a12f3421f92cb57fb6c7.png",
     "static/media/projectsTitle.jpg": "/static/media/projectsTitle.c931f2acf452bd56d023.jpg",
+    "static/media/tacoWebsite.png": "/static/media/tacoWebsite.69aa3e36fa9b7fde927c.png",
     "static/media/cat2.jpg": "/static/media/cat2.362a28b91ac28c049db1.jpg",
     "static/media/cat5.jpg": "/static/media/cat5.42b1f476324a9514700c.jpg",
     "static/media/cat4.jpg": "/static/media/cat4.876892b060213a5d9fb0.jpg",
@@ -26,11 +28,11 @@
     "static/media/cat1.jpg": "/static/media/cat1.f092159156a8df42ca66.jpg",
     "static/media/dotsConnector.png": "/static/media/dotsConnector.667ec6ee7483c5067fc7.png",
     "index.html": "/index.html",
-    "main.19a53ebc.css.map": "/static/css/main.19a53ebc.css.map",
-    "main.8093b881.js.map": "/static/js/main.8093b881.js.map"
+    "main.eafc2eb5.css.map": "/static/css/main.eafc2eb5.css.map",
+    "main.6b1fb4e2.js.map": "/static/js/main.6b1fb4e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.19a53ebc.css",
-    "static/js/main.8093b881.js"
+    "static/css/main.eafc2eb5.css",
+    "static/js/main.6b1fb4e2.js"
   ]
 }
