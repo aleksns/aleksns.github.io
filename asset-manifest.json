@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd727d2c.css",
+    "main.css": "/static/css/main.cad10809.css",
     "main.js": "/static/js/main.3ab891c2.js",
-    "static/media/profileTitle.jpg": "/static/media/profileTitle.2828b68d233d0c2f41b6.jpg",
     "static/media/catsPhotographer.png": "/static/media/catsPhotographer.8b24be80c27a262e3790.png",
     "static/media/spaceBrawl.png": "/static/media/spaceBrawl.df08de7454443dd94411.png",
     "static/media/stonehenge.jpg": "/static/media/stonehenge.8d67feb876dee0df181e.jpg",
     "static/media/catTitle.jpg": "/static/media/catTitle.c570629254c00b5a2d4b.jpg",
     "static/media/cat7.jpg": "/static/media/cat7.d1b8ca4364e712e6a575.jpg",
+    "static/media/profileTitle.jpg": "/static/media/profileTitle.aa48238d63ee11399f6a.jpg",
     "static/media/cat6.jpg": "/static/media/cat6.e6ba413470b4674e81d9.jpg",
     "static/media/cat10.jpg": "/static/media/cat10.181c2fe0668cf83d96ac.jpg",
     "static/media/cv-website.pdf": "/static/media/cv-website.1799fd26c92d6cf665a7.pdf",
@@ -28,11 +28,11 @@
     "static/media/cat1.jpg": "/static/media/cat1.f092159156a8df42ca66.jpg",
     "static/media/dotsConnector.png": "/static/media/dotsConnector.d742512161472e1700f2.png",
     "index.html": "/index.html",
-    "main.bd727d2c.css.map": "/static/css/main.bd727d2c.css.map",
+    "main.cad10809.css.map": "/static/css/main.cad10809.css.map",
     "main.3ab891c2.js.map": "/static/js/main.3ab891c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd727d2c.css",
+    "static/css/main.cad10809.css",
     "static/js/main.3ab891c2.js"
   ]
 }
