@@ -1,39 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.5a268944.css",
-    "main.js": "/static/js/main.6e66b61d.js",
+    "main.css": "/static/css/main.e74bee1a.css",
+    "main.js": "/static/js/main.25c032ca.js",
     "static/media/catsPhotographer.png": "/static/media/catsPhotographer.8b24be80c27a262e3790.png",
     "static/media/spaceBrawl.png": "/static/media/spaceBrawl.df08de7454443dd94411.png",
     "static/media/stonehenge.jpg": "/static/media/stonehenge.8d67feb876dee0df181e.jpg",
     "static/media/catTitle.jpg": "/static/media/catTitle.c570629254c00b5a2d4b.jpg",
-    "static/media/cat7.jpg": "/static/media/cat7.d1b8ca4364e712e6a575.jpg",
-    "static/media/profileTitle.jpg": "/static/media/profileTitle.aa48238d63ee11399f6a.jpg",
-    "static/media/cat6.jpg": "/static/media/cat6.e6ba413470b4674e81d9.jpg",
     "static/media/cat10.jpg": "/static/media/cat10.181c2fe0668cf83d96ac.jpg",
-    "static/media/cv-website.pdf": "/static/media/cv-website.8d68f7d534a20eeca250.pdf",
-    "static/media/cat8.jpg": "/static/media/cat8.848a130f60c3baf5d6b9.jpg",
+    "static/media/cv-website.pdf": "/static/media/cv-website.6e818e5cf41bb5553e62.pdf",
     "static/media/employeesTable.png": "/static/media/employeesTable.76a56732a93a443ee923.png",
-    "static/media/cat4.jpg": "/static/media/cat4.922bd8b3a8315f48e13c.jpg",
     "static/media/commentsPicker.png": "/static/media/commentsPicker.c121b97f5c10acc994b8.png",
-    "static/media/cat3.jpg": "/static/media/cat3.8851b7ae52701a105ba0.jpg",
     "static/media/cat11.jpg": "/static/media/cat11.bf9707f5336356262404.jpg",
-    "static/media/cat12.jpg": "/static/media/cat12.77072afa6623ab33e14b.jpg",
-    "static/media/cat9.jpg": "/static/media/cat9.db47b09d216ecb1af561.jpg",
+    "static/media/profileTitle.jpg": "/static/media/profileTitle.94467afbce2103f3f4cb.jpg",
     "static/media/impressivePainter.png": "/static/media/impressivePainter.a12f3421f92cb57fb6c7.png",
     "static/media/projectsTitle.jpg": "/static/media/projectsTitle.c931f2acf452bd56d023.jpg",
     "static/media/tacoWebsite.png": "/static/media/tacoWebsite.69aa3e36fa9b7fde927c.png",
     "static/media/cat2.jpg": "/static/media/cat2.362a28b91ac28c049db1.jpg",
-    "static/media/cat5.jpg": "/static/media/cat5.42b1f476324a9514700c.jpg",
     "static/media/calculator.png": "/static/media/calculator.c55d1c5e3208f34bc975.png",
     "static/media/cat1.jpg": "/static/media/cat1.f092159156a8df42ca66.jpg",
     "static/media/dotsConnector.png": "/static/media/dotsConnector.d742512161472e1700f2.png",
     "static/media/placeholder.png": "/static/media/placeholder.ad0164f7520fe773ee56.png",
     "index.html": "/index.html",
-    "main.5a268944.css.map": "/static/css/main.5a268944.css.map",
-    "main.6e66b61d.js.map": "/static/js/main.6e66b61d.js.map"
+    "main.e74bee1a.css.map": "/static/css/main.e74bee1a.css.map",
+    "main.25c032ca.js.map": "/static/js/main.25c032ca.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a268944.css",
-    "static/js/main.6e66b61d.js"
+    "static/css/main.e74bee1a.css",
+    "static/js/main.25c032ca.js"
   ]
 }
